@@ -2,8 +2,8 @@ import face_recognition
 from PIL import Image
 import matplotlib.pyplot as plt
 
-
-def study():
+#人脸比对
+def faceCompare():
     known_image = face_recognition.load_image_file("images/haoqy1.jpg")
     unknown_image = face_recognition.load_image_file("images/haoqy2.jpg")
     img1 = Image.open("images/haoqy1.jpg")
@@ -25,4 +25,4 @@ def study():
 
 if __name__ == "__main__":
     print("222")
-    study()
+    faceCompare()
